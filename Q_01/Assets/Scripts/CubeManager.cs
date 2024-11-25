@@ -11,12 +11,12 @@ public class CubeManager : MonoBehaviour
 
     private void Awake()
     {
-        CreateCube();
+        SetCubePosition(3, 0, 3);
     }
 
-    private void LateUpdate()
+    private void Start()
     {
-        SetCubePosition(3, 0, 3);
+        CreateCube();
     }
 
     private void SetCubePosition(float x, float y, float z)
